@@ -4,6 +4,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+/**
+ * {@link AddTwoNumbers} solution
+ */
 public class AddTwoNumbersTest {
     ListNode l1;
     ListNode l2;

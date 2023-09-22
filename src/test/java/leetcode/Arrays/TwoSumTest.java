@@ -3,6 +3,9 @@ package leetcode.Arrays;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+/**
+ * {@link TwoSum} solution
+ */
 public class TwoSumTest {
     @Test
     public void test() {
