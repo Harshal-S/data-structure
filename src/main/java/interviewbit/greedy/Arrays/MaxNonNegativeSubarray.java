@@ -80,7 +80,23 @@ public class MaxNonNegativeSubarray {
     }
 
     public ArrayList<Integer> solveWithArrayList(ArrayList<Integer> A) {
-        //TODO
-        return null;
+        long sum = 0, maxSum = 0;
+        ArrayList<Integer> newList = new ArrayList<Integer>();
+        ArrayList<Integer> maxList = new ArrayList<Integer>();
+        for(int i=0;i<A.size();i++) {
+            if(A.get(i)>=0) {
+                sum+=A.get(i);
+                newList.add(A.get(i));
+            } else {
+                sum=0;
+                newList= newList.size()!=0? new ArrayList(): newList;
+            }
+
+            if(maxSum < sum || (maxSum == sum && newList.size() > maxList.size())) {
+                maxSum = sum;
+                maxList = newList;
+            }
+        }
+        return maxList;
     }
 }
