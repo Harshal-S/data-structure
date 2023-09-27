@@ -27,7 +27,7 @@ import java.util.Arrays;
  * 3 <= nums.length <= 500
  * -1000 <= nums[i] <= 1000
  * -104 <= target <= 104
- *
+ * <p>
  * {@link ThreeSumZero } related problems
  */
 public class ThreeSumClosest {
@@ -35,7 +35,7 @@ public class ThreeSumClosest {
         Arrays.sort(nums);
         int closestSum = nums[0] + nums[1] + nums[2];
         int minDiff = Math.abs(target - closestSum);
-        for (int i = 0; i + 2< nums.length; i++) {
+        for (int i = 0; i + 2 < nums.length; i++) {
             int j = i + 1;
             int k = nums.length - 1;
             while (j < k) {
