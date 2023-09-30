@@ -46,8 +46,8 @@ public class RainWaterTrapped {
      * Approacch: Prefix sum to find left max and right max
      */
     public int solveUsingPrefixSum(final int[] A) {
-        int leftMaxHeight[] = new int[A.length];
-        int rightMaxHeight[] = new int[A.length];
+        int[] leftMaxHeight = new int[A.length];
+        int[] rightMaxHeight = new int[A.length];
         int totalWaterTrapped = 0;
         for (int i = 1; i < A.length; i++) {
             leftMaxHeight[i] = Math.max(A[i - 1], leftMaxHeight[i - 1]);

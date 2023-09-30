@@ -36,7 +36,7 @@ import java.util.Map;
 
 public class TwoSum {
     public int[] solve(int[] nums, int target) {
-        Map<Integer, Integer> hnums = new HashMap<Integer, Integer>();
+        Map<Integer, Integer> hnums = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             int complement = target - nums[i];
             if (hnums.containsKey(complement)) {
